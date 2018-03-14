@@ -15,15 +15,6 @@ class Filter extends Component {
           />
           {facility}
         </label>
-
-        {/*<div class="form-check">*/}
-        {/*<input type="checkbox" className="form-check-input" id={`exampleCheck1${index}`}>*/}
-        {/*<label class="form-check-label" for={`exampleCheck1${index}`}*/}
-        {/*value="{facility}"*/}
-        {/*onClick={e => this.props.onChange(facility, e.checked)}/>*/}
-        {/*</input>*/}
-
-        {/*</div>*/}
       </div>
     ));
     return (

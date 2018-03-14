@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../../logo.svg';
 import './HomePage.css';
 import SearchResult from '../search/SearchResult';
 import hotels from '../../data/hotels';
@@ -58,27 +57,21 @@ class HomePage extends Component {
     const hotels = this.internals.sortResults(this.internals.filterResults());
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to LateRooms Demo</h1>
-        </header>
-        <div className="container-fluid App-body">
-          <div className="row">
-            <div className="col-2">
-              <Filter
-                filters={this.state.filters}
-                facilities={this.internals.facilities}
-                onChange={this.internals.onFilterChange.bind(this)}
-              />
-              <Sort
-                className="half"
-                onSortChange={this.internals.onSortChange.bind(this)}
-              />
-            </div>
-            <div className="col-10">
-              <SearchResult hotels={hotels} />
-            </div>
+      <div className="container-fluid App-body">
+        <div className="row">
+          <div className="col-2">
+            <Filter
+              filters={this.state.filters}
+              facilities={this.internals.facilities}
+              onChange={this.internals.onFilterChange.bind(this)}
+            />
+            <Sort
+              className="half"
+              onSortChange={this.internals.onSortChange.bind(this)}
+            />
+          </div>
+          <div className="col-10">
+            <SearchResult hotels={hotels} />
           </div>
         </div>
       </div>
