@@ -22,6 +22,13 @@
   font-size: large;
 }
 
+.App-body {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align: left;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

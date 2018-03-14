@@ -1,0 +1,15 @@
+.Search-title {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.Search-item {
+  padding: 0.5rem;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-color: #cbcbcb;
+}
+
+li {
+  list-style-type: none;
+}
